@@ -19,6 +19,7 @@ from src.research_evaluator import (
     validate_freeze,
 )
 from src.research_statistics import rating_agreement
+from src.research_v3_ui import v3_collected_study, v3_comparison
 from src.review import ReviewRepository, content_hash
 from src.utils import PROJECT_ROOT, digest_bytes
 
@@ -228,7 +229,7 @@ def research_page(facts, sources, development, runtime: Path, repository: Review
     st.caption("FactGuard EDU / Nghiên cứu kiểm chứng mệnh đề")
     st.title("Phòng nghiên cứu")
     st.write("Đo khả năng kiểm chứng nhiều dữ kiện, phân tích lỗi và thu thập thẩm định có nguồn gốc rõ ràng.")
-    tabs = st.tabs(["Thực nghiệm v2", "Gán nhãn độc lập", "Thiết kế và đóng băng"])
+    tabs = st.tabs(["Thực nghiệm v2", "Gán nhãn độc lập", "Thiết kế và đóng băng", "Đối chiếu v2-v3", "Đánh giá ca thật v3"])
     with tabs[0]:
         challenge = PROJECT_ROOT / "data" / "research" / "challenge.jsonl"
         cases = load_challenge(challenge, facts)
@@ -259,3 +260,7 @@ def research_page(facts, sources, development, runtime: Path, repository: Review
         path = PROJECT_ROOT / "reports" / "nghien_cuu_v2.md"
         if path.exists():
             st.markdown(path.read_text(encoding="utf-8"))
+    with tabs[3]:
+        v3_comparison(facts, sources)
+    with tabs[4]:
+        v3_collected_study(facts, sources, development, runtime, repository)

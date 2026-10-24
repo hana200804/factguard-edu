@@ -1,0 +1,15 @@
+FROM python:3.12-slim
+ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1 FACTGUARD_RUNTIME_DIR=/app/runtime
+WORKDIR /app
+COPY requirements*.txt ./
+RUN pip install --no-cache-dir -r requirements-web.txt
+COPY src/ src/
+COPY scripts/ scripts/
+COPY data/ data/
+COPY reports/ reports/
+COPY web/ web/
+RUN python scripts/fetch_model.py && useradd --uid 10001 --create-home factguard && mkdir -p runtime && chown factguard:factguard runtime
+USER factguard
+VOLUME ["/app/runtime"]
+EXPOSE 8765
+CMD ["python", "scripts/serve_web.py", "--host", "0.0.0.0", "--port", "8765"]

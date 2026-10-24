@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-10-24T18:31:56+00:00",
+  "public_url": "https://factguard-edu-hana-2026.choicelamp8.chatgpt.site",
+  "site_version": 2,
+  "site_source_commit": "a62e6c4de87e05e72eb0b3c800ada7b610ea5cba",
+  "deployment_status": "succeeded",
+  "python_tests": {
+    "passed": 220,
+    "failures": 0,
+    "elapsed_seconds": 44.05
+  },
+  "ruff": "passed",
+  "pyright": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "pip_check": "passed",
+  "javascript_syntax": "passed",
+  "browser_smoke": [
+    "Public page loads and API status connects",
+    "Conflicting-name example returns contradicted with three claim checks",
+    "F002 source dialog shows reference and original URL",
+    "Search Dien Bien Phu returns four facts",
+    "Browser history reopens previous result",
+    "Narrow-screen navigation menu works"
+  ],
+  "live_nli_smoke": "Public API ran the pinned real NLI model; unresolved clause remained insufficient. This was a software smoke test, not a collected research observation.",
+  "protected_files_unchanged": 24,
+  "v2_freeze_valid": true,
+  "v3_freeze_valid": true,
+  "web_study_cases_created": 0,
+  "web_annotations_created": 0,
+  "admin_secret_in_public_bundle": false,
+  "backend": "Local Windows API shared through a temporary Cloudflare Quick Tunnel; machine and both processes must stay running.",
+  "limitations": [
+    "Docker configuration prepared but not deployed or tested on another host.",
+    "Public browser flows tested; research write flows tested only with isolated fixtures and temporary databases.",
+    "No new human study or claim of improved learning outcomes."
+  ],
+  "screenshot": "kiem-chung-web.jpg"
+}

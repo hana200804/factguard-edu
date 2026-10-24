@@ -1,5 +1,11 @@
 # FactGuard EDU
 
+## Sản phẩm web
+
+**[Mở FactGuard EDU Web](https://factguard-edu-hana-2026.choicelamp8.chatgpt.site)** — giao diện kiểm chứng, kho nguồn, lịch sử trên trình duyệt và phòng nghiên cứu có mã truy cập. API hiện chạy từ máy này qua kết nối tạm; cần giữ máy và dịch vụ hoạt động. Hướng dẫn chạy, mã quản trị và triển khai máy chủ cố định: [reports/huong_dan_web.md](reports/huong_dan_web.md).
+
+Chạy cục bộ: `run-web.bat` hoặc `.\.venv\Scripts\python.exe scripts\serve_web.py --port 8765` sau khi cài `requirements-web.txt`. Bản Streamlit bên dưới vẫn được giữ làm giao diện nghiên cứu bổ sung.
+
 V3 thử nghiệm trên nhánh `v3-nli`: [thiết kế, hồi quy và giới hạn NLI offline](reports/research_v3/README.md).
 ## Phiên bản nghiên cứu v2
 
