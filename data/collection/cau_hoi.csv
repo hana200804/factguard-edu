@@ -1,0 +1,51 @@
+ma_cau_hoi,ma_su_kien,loai,cau_hoi,nguon_cau_hoi
+Q01,independence1945,don,Bác Hồ đọc Tuyên ngôn Độc lập vào ngày tháng năm nào?,tro_ly
+Q02,independence1945,don,Ai là người đọc bản Tuyên ngôn Độc lập khai sinh nước Việt Nam Dân chủ Cộng hòa?,tro_ly
+Q03,independence1945,don,Tuyên ngôn Độc lập năm 1945 được đọc tại địa điểm nào?,tro_ly
+Q04,independence1945,ket_hop,"Tuyên ngôn Độc lập được đọc vào ngày nào, ở đâu và do ai đọc?",tro_ly
+Q05,independence1945,tien_de_sai,Võ Nguyên Giáp đọc Tuyên ngôn Độc lập ở Quảng trường Ba Đình vào ngày nào?,tro_ly
+Q06,saigonindependence1945,don,"Ngày 2/9/1945, ai phát biểu tại Lễ Độc lập ở Sài Gòn?",tro_ly
+Q07,saigonindependence1945,don,Lễ Độc lập ở Sài Gòn ngày 2/9/1945 được tổ chức tại quảng trường nào?,tro_ly
+Q08,saigonindependence1945,don,Lễ Độc lập tại Sài Gòn năm 1945 diễn ra vào ngày nào?,tro_ly
+Q09,hanoi1945,don,Khởi nghĩa giành chính quyền ở Hà Nội trong Cách mạng tháng Tám thắng lợi vào ngày nào?,tro_ly
+Q10,hanoi1945,don,"Ngày 19/8/1945, cuộc mít tinh ở Hà Nội tập hợp trước địa điểm nào?",tro_ly
+Q11,hanoi1945,ket_hop,Khởi nghĩa giành chính quyền ở Hà Nội năm 1945 thắng lợi ngày nào và cuộc mít tinh tập hợp ở đâu?,tro_ly
+Q12,hue1945,don,Khởi nghĩa giành chính quyền ở Huế năm 1945 thắng lợi vào ngày nào?,tro_ly
+Q13,hue1945,tien_de_sai,Vì sao khởi nghĩa giành chính quyền ở Huế năm 1945 thắng lợi sớm hơn ở Hà Nội?,tro_ly
+Q14,saigon1945,don,Khởi nghĩa giành chính quyền ở Sài Gòn năm 1945 thắng lợi vào ngày nào?,tro_ly
+Q15,saigon1945,don,Ai là Chủ tịch Ủy ban Hành chính Lâm thời Nam Bộ ra mắt năm 1945?,tro_ly
+Q16,hanoi1945,ket_hop,"Khởi nghĩa giành chính quyền năm 1945 ở Hà Nội, Huế và Sài Gòn lần lượt thắng lợi vào những ngày nào?",tro_ly
+Q17,abdication1945,don,Vua Bảo Đại thoái vị vào ngày nào?,tro_ly
+Q18,abdication1945,don,Lễ thoái vị của vua Bảo Đại diễn ra ở đâu?,tro_ly
+Q19,abdication1945,don,Vị vua cuối cùng của triều Nguyễn thoái vị tại Huế năm 1945 là ai?,tro_ly
+Q20,abdication1945,ket_hop,Vua Bảo Đại thoái vị vào ngày nào và ở đâu?,tro_ly
+Q21,abdication1945,tien_de_sai,Lễ thoái vị của vua Khải Định tại Ngọ Môn diễn ra vào ngày nào?,tro_ly
+Q22,dbp1954,don,Chiến dịch Điện Biên Phủ bắt đầu vào ngày nào?,tro_ly
+Q23,dbp1954,don,Chiến dịch Điện Biên Phủ kết thúc thắng lợi vào ngày nào?,tro_ly
+Q24,dbp1954,don,Ai là người chỉ huy chiến dịch Điện Biên Phủ?,tro_ly
+Q25,dbp1954,don,Trận mở màn chiến dịch Điện Biên Phủ tiến công vào cứ điểm nào?,tro_ly
+Q26,dbp1954,ket_hop,Chiến dịch Điện Biên Phủ diễn ra từ ngày nào đến ngày nào?,tro_ly
+Q27,dbp1954,tien_de_sai,Chiến dịch Điện Biên Phủ do Đại tướng Văn Tiến Dũng chỉ huy kết thúc vào ngày nào?,tro_ly
+Q28,dbp1954,mo,Ý nghĩa lịch sử của chiến thắng Điện Biên Phủ là gì?,tro_ly
+Q29,party1930,don,Đảng Cộng sản Việt Nam được thành lập vào ngày nào?,tro_ly
+Q30,party1930,don,Ai chủ trì hội nghị hợp nhất các tổ chức cộng sản thành Đảng Cộng sản Việt Nam?,tro_ly
+Q31,party1930,don,Hội nghị hợp nhất thành lập Đảng Cộng sản Việt Nam năm 1930 diễn ra ở đâu?,tro_ly
+Q32,party1930,don,Ai chủ trì Hội nghị Ban Chấp hành Trung ương lần thứ nhất tháng 10/1930?,tro_ly
+Q33,party1930,ket_hop,"Đảng Cộng sản Việt Nam thành lập ngày nào, ở đâu và ai chủ trì hội nghị hợp nhất?",tro_ly
+Q34,party1930,tien_de_sai,Hội nghị hợp nhất thành lập Đảng Cộng sản Việt Nam tại Hà Nội năm 1930 do ai chủ trì?,tro_ly
+Q35,party1930,mo,Vì sao năm 1930 cần hợp nhất các tổ chức cộng sản ở Việt Nam?,tro_ly
+Q36,decree1945,don,Sắc lệnh số 76 hoãn tổng tuyển cử được ban hành vào ngày nào?,tro_ly
+Q37,decree1945,don,Ai ký Sắc lệnh số 76 hoãn ngày tổng tuyển cử?,tro_ly
+Q38,decree1945,don,"Theo Sắc lệnh số 76 năm 1945, cuộc tổng tuyển cử được hoãn đến ngày nào?",tro_ly
+Q39,decree1945,ket_hop,"Sắc lệnh số 76 hoãn tổng tuyển cử do ai ký, ban hành ngày nào và hoãn đến ngày nào?",tro_ly
+Q40,dbp1954,kiem_tra,Có đúng là chiến dịch Điện Biên Phủ kết thúc ngày 7/5/1954 không?,tro_ly
+Q41,abdication1945,kiem_tra,"Có phải vua Bảo Đại thoái vị tại Lầu Ngọ Môn, Huế không?",tro_ly
+Q42,saigonindependence1945,kiem_tra,Có phải Trần Văn Giàu phát biểu tại Lễ Độc lập ở Sài Gòn ngày 2/9/1945 không?,tro_ly
+Q43,outside,ngoai_kho,Chiến thắng Bạch Đằng của Ngô Quyền diễn ra năm nào?,tro_ly
+Q44,outside,ngoai_kho,Chiến dịch Hồ Chí Minh kết thúc vào ngày nào?,tro_ly
+Q45,outside,ngoai_kho,Hiệp định Giơ-ne-vơ về Đông Dương được ký vào ngày nào?,tro_ly
+Q46,outside,ngoai_kho,Chiến dịch Việt Bắc thu – đông diễn ra vào năm nào?,tro_ly
+Q47,outside,ngoai_kho,Ai lãnh đạo cuộc khởi nghĩa Yên Thế?,tro_ly
+Q48,outside,ngoai_kho,Phong trào Đông Du do ai khởi xướng?,tro_ly
+Q49,outside,ngoai_kho,Chiến dịch Biên giới thu – đông 1950 kết thúc vào ngày nào?,tro_ly
+Q50,party1930,thieu_du_kien,Ai là Tổng Bí thư đầu tiên của Đảng Cộng sản Việt Nam?,tro_ly
