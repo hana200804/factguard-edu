@@ -25,7 +25,7 @@ Ngân hàng có 50 câu do trợ lý soạn; mẫu đi kèm có 100 dòng trốn
 .\.venv\Scripts\python.exe scripts\import_collected.py data\collection\dot1.csv --dry-run
 ```
 
-Sau khi điền và hết lỗi, chạy lại lệnh nhập bỏ `--dry-run`; hoặc vào **Phòng nghiên cứu → Gán nhãn độc lập → Nhập nhiều câu trả lời từ tệp CSV** để tải mẫu, xem trước và bấm nhập (tối đa 5 MB). Ca mới chưa có nhãn. Tệp đã điền trong `data/collection/` có thể vào ZIP/Git, cần kiểm tra trước khi chia sẻ.
+Sau khi điền và hết lỗi, chạy lại lệnh nhập bỏ `--dry-run`; hoặc vào **Phòng nghiên cứu → Gán nhãn độc lập → Nhập nhiều câu trả lời từ tệp CSV** để tải mẫu, xem trước và bấm nhập (tối đa 5 MB). Ca mới chưa có nhãn. Trong `data/collection/`, chỉ hai tệp gốc `cau_hoi.csv` và `mau_ghi_cau_tra_loi.csv` được theo dõi trên Git và đóng gói vào ZIP; mọi tệp khác, kể cả trong thư mục con, bị bỏ qua. Giữ mẫu gốc trống, điền vào tệp riêng như `dot1.csv` và sao lưu riêng; xem lưu ý về `git add -f` trong hướng dẫn.
 
 **Kiểm chứng để hiểu đúng.** Ứng dụng tiếng Việt giúp học sinh THPT đối chiếu câu trả lời AI về Lịch sử Việt Nam với kho dữ kiện có nguồn. Chạy bằng Python/Streamlit trên CPU, không cần API key. Sau khi cài thư viện, kiểm chứng và thực nghiệm chạy offline; nút mở nguồn gốc cần Internet.
 

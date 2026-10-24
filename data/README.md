@@ -10,7 +10,9 @@ Nguồn được mở và đối chiếu ngày 24/10/2026. `verified=true` nghĩ
 - `dataset_card.json`: quy mô và nguồn gốc dữ liệu.
 - `sources/`: bản tóm lược ngắn, dùng offline.
 - `collection/cau_hoi.csv`: 50 câu hỏi do trợ lý soạn, ghi `nguon_cau_hoi = tro_ly`; bảy loại câu hỏi không phải nhãn câu trả lời.
-- `collection/mau_ghi_cau_tra_loi.csv`: 100 dòng trống cho 50 câu × ChatGPT/Gemini, chưa có đầu ra chatbot đã thu. Điền theo [hướng dẫn thu thập](../reports/huong_dan_thu_thap.md); tệp đã điền trong thư mục này có thể vào ZIP/Git.
+- `collection/mau_ghi_cau_tra_loi.csv`: 100 dòng trống cho 50 câu × ChatGPT/Gemini, chưa có đầu ra chatbot đã thu. Giữ mẫu gốc trống, tạo tệp riêng như `collection/dot1.csv` để điền theo [hướng dẫn thu thập](../reports/huong_dan_thu_thap.md).
+
+Chỉ hai tệp gốc trên trong `collection/` được theo dõi trên Git và đóng gói vào ZIP; mọi tệp khác, kể cả trong thư mục con, bị bỏ qua. Tệp đã điền cần sao lưu riêng; `git add -f` vẫn có thể vượt quy tắc bỏ qua của Git.
 
 ## Thêm dữ kiện có thể kiểm chứng
 

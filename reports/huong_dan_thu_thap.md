@@ -117,6 +117,8 @@ Giữ nguyên các tệp đã đóng băng liệt kê trong `reports\research_v2
 
 Không đưa thông tin cá nhân hoặc dữ liệu nhạy cảm vào câu hỏi, câu trả lời và ghi chú. Dùng mã người thay cho thông tin nhận diện khi có thể. Khi có người tham gia, thực hiện theo hướng dẫn của giáo viên/nhà trường. Bản ghi cục bộ chưa có cơ chế phân quyền hoặc mã hóa cho nghiên cứu nhiều người.
 
-`runtime/` được loại khỏi ZIP source mặc định, nhưng **`scripts/package_project.py` hiện có đóng gói `data/collection/`**. Tệp mẫu đã điền đặt trong thư mục này có thể đi vào ZIP hoặc được đưa lên Git. Mẫu gốc hiện còn trống; không tự commit/push tệp đã điền cùng mã nguồn. Trước khi chia sẻ, kiểm tra từng tệp; có thể giữ tệp đã điền và bản ghi gốc trong `runtime/` hoặc ngoài source nếu không định công bố, đồng thời truyền đúng đường dẫn đó cho lệnh nhập.
+`runtime/` được loại khỏi ZIP source mặc định. Trong `data/collection/`, chỉ hai tệp gốc **`cau_hoi.csv` và `mau_ghi_cau_tra_loi.csv`** được theo dõi trên Git và đóng gói vào ZIP. Mọi tệp khác, kể cả trong thư mục con, bị `.gitignore` bỏ qua và không vào ZIP. Luôn giữ `mau_ghi_cau_tra_loi.csv` gốc trống; tạo tệp riêng như `dot1.csv` để điền câu trả lời.
+
+Giữ bản sao lưu riêng cho tệp đã điền và bản ghi gốc. Nếu cố ý công bố dữ liệu, tự sao dữ liệu ra vị trí khác sau khi xóa thông tin cá nhân, rồi kiểm tra trước khi chia sẻ. Lưu ý **`git add -f` vẫn vượt được `.gitignore`**; quy tắc bỏ qua không ngăn việc cố ý thêm tệp vào Git.
 
 Một lượt thu tại một thời điểm chỉ phản ánh câu hỏi, điều kiện và phiên bản đã ghi; không đại diện cho mọi phiên bản hoặc mọi cách dùng chatbot. Đầu ra có thể thay đổi theo thời gian. Nhãn đánh giá mức hỗ trợ từ kho tham chiếu khả dụng, không phải phán quyết về mọi kiến thức trên Internet. Bộ câu hỏi do trợ lý soạn và quy trình chọn mẫu vẫn có thể gây thiên lệch; không suy ra hiệu quả học tập hay khả năng khái quát rộng từ một lượt thu.

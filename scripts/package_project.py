@@ -8,6 +8,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED = {".venv", "runtime", "__pycache__", ".pytest_cache", ".ruff_cache", ".git", "htmlcov", "wheelhouse", "node_modules"}
+COLLECTION_KEEP = {"cau_hoi.csv", "mau_ghi_cau_tra_loi.csv"}
+
+
+def collect_paths(root: Path) -> list[Path]:
+    paths = []
+    for folder, directories, filenames in os.walk(root):
+        directories[:] = [d for d in directories if d not in EXCLUDED and not d.startswith("pytest-cache-files-")]
+        if Path(folder) == root / "data" / "collection":
+            directories.clear()
+            filenames = [name for name in filenames if name in COLLECTION_KEEP]
+        for filename in filenames:
+            path = Path(folder) / filename
+            if filename != ".coverage" and path.suffix not in {".pyc", ".zip", ".log"}:
+                paths.append(path)
+    return paths
 
 
 def main():
@@ -17,13 +32,7 @@ def main():
     if Path(args.name).name != args.name or not args.name.endswith(".zip"):
         raise ValueError("Archive name must be a plain .zip filename")
     destination = ROOT.parent / args.name
-    paths = []
-    for folder, directories, filenames in os.walk(ROOT):
-        directories[:] = [d for d in directories if d not in EXCLUDED and not d.startswith("pytest-cache-files-")]
-        for filename in filenames:
-            path = Path(folder) / filename
-            if filename != ".coverage" and path.suffix not in {".pyc", ".zip", ".log"}:
-                paths.append(path)
+    paths = collect_paths(ROOT)
     with zipfile.ZipFile(destination, "w", zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(paths):
             archive.write(path, arcname=Path("factguard-edu") / path.relative_to(ROOT))

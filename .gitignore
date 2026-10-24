@@ -13,3 +13,6 @@ node_modules/
 .env.*
 !.env.example
 .streamlit/secrets.toml
+data/collection/*
+!data/collection/cau_hoi.csv
+!data/collection/mau_ghi_cau_tra_loi.csv
