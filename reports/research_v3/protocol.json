@@ -1,0 +1,36 @@
+{
+  "version": "3.0.0-dev",
+  "written_before_measurement": "2026-10-24",
+  "question": "Thêm NLI offline cho các đoạn luật v2 chưa đọc được có tăng số ca kết luận đúng mà không tăng hỗ trợ sai không?",
+  "model": {
+    "id": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "revision": "b5113eb38ab63efdd7f280f8c144ea8b13f978ce",
+    "file": "onnx/model_quantized.onnx",
+    "license": "MIT",
+    "runtime": "onnxruntime CPU"
+  },
+  "decision_rules": {
+    "rules_first": "Nhãn supported/contradicted của v2 giữ nguyên; NLI không ghi đè.",
+    "resolvable_issues": ["uncovered_content", "unknown_relation"],
+    "premise": "Câu bằng chứng của các dữ kiện cùng sự kiện với câu hỏi, đoạn trả lời hoặc mệnh đề đã kiểm.",
+    "entailment_min": 0.80,
+    "contradiction_min": 0.90,
+    "value_guard": "Mọi ngày/tên/địa điểm và số trong đoạn phải có trong bằng chứng thì mới nhận entailment."
+  },
+  "pre_registered_observation": "Chạy thử trước khi viết luật: mô hình cho 'Võ Nguyên Giáp đọc Tuyên ngôn Độc lập' entailment 0.57 so với câu bằng chứng Hồ Chí Minh; lý do của value guard.",
+  "evaluation_plan": {
+    "primary": "Ca câu trả lời AI thật đã thu thập, hai người gán nhãn đồng thuận, sự kiện không thuộc development. Đóng băng v3 trước khi xem các ca này.",
+    "regression_only": ["24 ca development v1", "87 ca evaluation v1 (đã xem)", "46 ca challenge v2 (đã xem)"],
+    "metrics": ["accuracy", "f1_macro", "false_support_count", "decisive_coverage", "decisive_risk"],
+    "no_tuning": "Không đổi ngưỡng theo kết quả. Trước khi đóng băng, mọi sửa luật ghi vào changelog; sau khi đóng băng không sửa."
+  },
+  "changelog": [
+    {"date": "2026-10-24", "after": "Lần chạy hồi quy đầu (v3 43/46 challenge, 0 hỗ trợ sai) và câu thử tự viết",
+     "change": "Thêm dự phòng chọn bằng chứng: khi không khớp đủ quan hệ, dùng sự kiện duy nhất khớp một nhóm neo (ví dụ 'điện biên phủ'). Lý do: câu hỏi 'Điện Biên Phủ diễn ra từ ngày nào đến ngày nào' không có bằng chứng cho NLI. Ngưỡng không đổi."},
+    {"date": "2026-10-24", "after": "Gỡ lỗi câu thử trên",
+     "change": "Dự phòng chỉ dùng neo có từ hai âm tiết trở lên; neo một từ như 'đến' (decree.election) làm khớp nhầm sự kiện."},
+    {"date": "2026-10-24", "after": "Câu thử 'Đại tướng Văn Tiến Dũng' qua được chốt giá trị vì tên ngoài từ điển",
+     "change": "Chốt giá trị thêm: mọi từ viết hoa (trừ từ đầu đoạn) phải có trong bằng chứng. Thận trọng: có thể chặn cả cách gọi đúng như 'Bác', 'Đại tướng'."}
+  ],
+  "value_guard_full": "Ngày/tên/địa điểm nhận dạng được, mọi số, và mọi từ viết hoa trừ từ đầu đoạn đều phải có trong bằng chứng."
+}

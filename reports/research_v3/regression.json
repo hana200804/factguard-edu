@@ -1,0 +1,424 @@
+{
+  "created_at": "2026-10-24T11:14:30+00:00",
+  "version": "3.0.0-dev",
+  "model_revision": "b5113eb38ab63efdd7f280f8c144ea8b13f978ce",
+  "v2_engine_matches_freeze": true,
+  "metrics": {
+    "v1_development": {
+      "claims_guarded": {
+        "n": 24,
+        "accuracy": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0,
+        "per_label": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 8.0
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 8.0
+          },
+          "insufficient": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 8.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "labels": [
+          "supported",
+          "contradicted",
+          "insufficient",
+          "undetermined"
+        ],
+        "abstention_rate": 0.0,
+        "no_conclusive_rate": 0.3333333333333333,
+        "selective_accuracy": 1.0,
+        "mean_ms": 11.320791667458252,
+        "median_ms": 10.1890999940224,
+        "p95_ms": 18.069104999449333,
+        "false_support_count": 0,
+        "non_supported_gold_count": 16,
+        "correct": 24
+      },
+      "hybrid_v3": {
+        "n": 24,
+        "accuracy": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0,
+        "per_label": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 8.0
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 8.0
+          },
+          "insufficient": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 8.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "labels": [
+          "supported",
+          "contradicted",
+          "insufficient",
+          "undetermined"
+        ],
+        "abstention_rate": 0.0,
+        "no_conclusive_rate": 0.3333333333333333,
+        "selective_accuracy": 1.0,
+        "mean_ms": 33.72656250091192,
+        "median_ms": 12.150050009950064,
+        "p95_ms": 82.5358850088378,
+        "false_support_count": 0,
+        "non_supported_gold_count": 16,
+        "correct": 24
+      }
+    },
+    "v1_evaluation": {
+      "claims_guarded": {
+        "n": 87,
+        "accuracy": 0.9195402298850575,
+        "precision_macro": 1.0,
+        "recall_macro": 0.9180695847362514,
+        "f1_macro": 0.9571549773755655,
+        "per_label": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 0.9259259259259259,
+            "f1-score": 0.9615384615384616,
+            "support": 27.0
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1-score": 0.9411764705882353,
+            "support": 27.0
+          },
+          "insufficient": {
+            "precision": 1.0,
+            "recall": 0.9393939393939394,
+            "f1-score": 0.96875,
+            "support": 33.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            24,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            31,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "labels": [
+          "supported",
+          "contradicted",
+          "insufficient",
+          "undetermined"
+        ],
+        "abstention_rate": 0.08045977011494253,
+        "no_conclusive_rate": 0.4367816091954023,
+        "selective_accuracy": 1.0,
+        "mean_ms": 9.020559770227731,
+        "median_ms": 8.88140000461135,
+        "p95_ms": 13.011959999857936,
+        "false_support_count": 0,
+        "non_supported_gold_count": 60,
+        "correct": 80
+      },
+      "hybrid_v3": {
+        "n": 87,
+        "accuracy": 0.9195402298850575,
+        "precision_macro": 1.0,
+        "recall_macro": 0.9180695847362514,
+        "f1_macro": 0.9571549773755655,
+        "per_label": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 0.9259259259259259,
+            "f1-score": 0.9615384615384616,
+            "support": 27.0
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1-score": 0.9411764705882353,
+            "support": 27.0
+          },
+          "insufficient": {
+            "precision": 1.0,
+            "recall": 0.9393939393939394,
+            "f1-score": 0.96875,
+            "support": 33.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            25,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            24,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            31,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "labels": [
+          "supported",
+          "contradicted",
+          "insufficient",
+          "undetermined"
+        ],
+        "abstention_rate": 0.08045977011494253,
+        "no_conclusive_rate": 0.4367816091954023,
+        "selective_accuracy": 1.0,
+        "mean_ms": 23.635364368413413,
+        "median_ms": 9.363399993162602,
+        "p95_ms": 101.18535000219708,
+        "false_support_count": 0,
+        "non_supported_gold_count": 60,
+        "correct": 80
+      }
+    },
+    "v2_challenge": {
+      "claims_guarded": {
+        "n": 46,
+        "accuracy": 0.9130434782608695,
+        "precision_macro": 0.9722222222222222,
+        "recall_macro": 0.9082767722473605,
+        "f1_macro": 0.9391463017269469,
+        "per_label": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 0.9375,
+            "f1-score": 0.967741935483871,
+            "support": 16.0
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 0.9411764705882353,
+            "f1-score": 0.9696969696969697,
+            "support": 17.0
+          },
+          "insufficient": {
+            "precision": 0.9166666666666666,
+            "recall": 0.8461538461538461,
+            "f1-score": 0.88,
+            "support": 13.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            15,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            11,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "labels": [
+          "supported",
+          "contradicted",
+          "insufficient",
+          "undetermined"
+        ],
+        "abstention_rate": 0.06521739130434782,
+        "no_conclusive_rate": 0.32608695652173914,
+        "selective_accuracy": 0.9767441860465116,
+        "mean_ms": 7.976839131594676,
+        "median_ms": 8.177250005246606,
+        "p95_ms": 12.161300001025666,
+        "false_support_count": 0,
+        "non_supported_gold_count": 30,
+        "correct": 42
+      },
+      "hybrid_v3": {
+        "n": 46,
+        "accuracy": 0.9347826086956522,
+        "precision_macro": 1.0,
+        "recall_macro": 0.9291101055806937,
+        "f1_macro": 0.962121212121212,
+        "per_label": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 0.9411764705882353,
+            "f1-score": 0.9696969696969697,
+            "support": 17.0
+          },
+          "insufficient": {
+            "precision": 1.0,
+            "recall": 0.8461538461538461,
+            "f1-score": 0.9166666666666666,
+            "support": 13.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            11,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "labels": [
+          "supported",
+          "contradicted",
+          "insufficient",
+          "undetermined"
+        ],
+        "abstention_rate": 0.06521739130434782,
+        "no_conclusive_rate": 0.30434782608695654,
+        "selective_accuracy": 1.0,
+        "mean_ms": 16.683834783021744,
+        "median_ms": 9.176399995340034,
+        "p95_ms": 88.79962500577676,
+        "false_support_count": 0,
+        "non_supported_gold_count": 30,
+        "correct": 43
+      }
+    }
+  },
+  "changed_predictions": 1,
+  "data_origin": "Bộ tổng hợp đã xem khi phát triển v2; chỉ là kiểm tra hồi quy."
+}

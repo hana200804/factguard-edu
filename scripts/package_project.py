@@ -7,7 +7,7 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED = {".venv", "runtime", "__pycache__", ".pytest_cache", ".ruff_cache", ".git", "htmlcov", "wheelhouse", "node_modules"}
+EXCLUDED = {".venv", "runtime", "models", "__pycache__", ".pytest_cache", ".ruff_cache", ".git", "htmlcov", "wheelhouse", "node_modules"}
 COLLECTION_KEEP = {"cau_hoi.csv", "mau_ghi_cau_tra_loi.csv"}
 
 
