@@ -89,6 +89,16 @@ Script **kiểm tra toàn bộ dữ liệu trước khi bắt đầu nhập**: c
 
 Nhập lại cùng tệp không tạo ca trùng. Ca mới được lưu **chưa có nhãn** trong `runtime\research.sqlite3`; nhật ký CSV theo lượt ở `runtime\collection_imports\`, gồm `row`, `qid`, `case_id`, `status` (`đã nhập` hoặc `đã có, bỏ qua`). Nếu đã đặt `FACTGUARD_RUNTIME_DIR`, cơ sở dữ liệu và nhật ký nằm dưới thư mục đó. Thông tin xuất xứ như công cụ, phiên bản, ngày và ghi chú được giữ trong bản ghi; cần sao lưu dữ liệu cục bộ nếu muốn bảo toàn hồ sơ thu thập.
 
+## Nhập CSV ngay trong giao diện
+
+Có thể dùng **Phòng nghiên cứu → Gán nhãn độc lập → Nhập nhiều câu trả lời từ tệp CSV** thay cho lệnh nhập:
+
+1. Bấm **Tải mẫu ghi câu trả lời CSV** nếu cần mẫu trống mặc định, rồi điền và lưu UTF-8 theo hướng dẫn trên.
+2. Chọn CSV tối đa **5 MB**. Giao diện kiểm tra cả tệp, hiện số dòng hợp lệ/chưa điền và từng lỗi nếu có. Bảng xem trước chỉ chứa số dòng, mã câu hỏi, câu hỏi và câu trả lời; không hiện thông tin công cụ hay người thu thập.
+3. Khi không còn lỗi, bấm **Nhập vào hàng đợi gán nhãn**. Chỉ tải lên hoặc xem trước chưa thêm ca; tệp toàn dòng trống không có ca để nhập. Quy tắc chống trùng và trạng thái chưa có nhãn giống lệnh nhập.
+
+Bản CSV gốc tải lên được giữ dưới tên `upload_*.csv`, nhật ký sau khi bấm nhập dưới tên `import_*.csv`, trong `runtime/collection_imports/` (hoặc thư mục do `FACTGUARD_RUNTIME_DIR` chỉ định). Tệp gốc vẫn chứa xuất xứ và thông tin người thu thập; việc ẩn bảng xem trước không bảo vệ quyền truy cập các tệp cục bộ. Nếu nhập bị ngắt hoặc không ghi được nhật ký, kiểm tra hàng đợi trước khi thử lại.
+
 ## Gán nhãn độc lập và phép đo
 
 Mở ứng dụng → **Phòng nghiên cứu → Gán nhãn độc lập**. Hai người dùng mã riêng, đọc nguồn và tự gán nhãn trước khi xem đầu ra FactGuard; xem [quy trình gán nhãn](huong_dan_gan_nhan.md). Người thu thập nên bàn giao phiếu mà không gợi ý nhãn hoặc tiết lộ công cụ cho người chấm. Việc ẩn thông tin trên giao diện không thay thế việc tổ chức đánh giá độc lập.

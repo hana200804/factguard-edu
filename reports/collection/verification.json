@@ -1,0 +1,50 @@
+{
+  "created_at": "2026-10-24T10:48:52+00:00",
+  "scope": "Collection kit, isolated import tests, documentation, and explicit CSV upload",
+  "environment": {
+    "python": "3.12.10",
+    "streamlit": "1.66.1",
+    "system": "Windows"
+  },
+  "tests": {
+    "tests": 157,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "tests_passed": 157,
+  "coverage_percent": 91.183879093199,
+  "ruff": "passed",
+  "pyright": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "compileall": "passed",
+  "validate_freeze": true,
+  "provided_collection_core_scripts_and_csv_unchanged": true,
+  "real_runtime_database_bytes_unchanged": true,
+  "question_bank_count": 50,
+  "blank_template_rows": 100,
+  "source_sha256": {
+    "src/collection.py": "025d33101d8af3f0d5ee23ee1ad13189f93c799b7eab79c2b4409e23248d17e7",
+    "src/collection_ui.py": "e14c364f22964f3544602041a4fe83d66dab227fbf1d152441f06395ecf9222b",
+    "src/research_ui.py": "a56363b87a8b86fc1f5406db82b06e84e670edb2b89be477ffda98e3c5f85106",
+    "scripts/build_collection_kit.py": "673606d3f77f43e16f2e0502fb15114de08dc154017944f845563e1d95e0aa47",
+    "scripts/import_collected.py": "1597e4dcf1b21914c33ef7d902ca808322a2312ce537e9da333c28833e6445c3",
+    "tests/test_collection.py": "c2e3b2b5539a83e0ee6ac633f4668718b6632e526fde2c9fe1bbdf3526554d22",
+    "tests/test_research_app.py": "090c8f74c7709af6896d40d4264a76308de9d2cef648910069bb7ed37fd5b962",
+    "data/collection/cau_hoi.csv": "d6f08fceceb17b1f1a33e27544d55aa70e45ff1c665f7f10bc0262a2f0331436",
+    "data/collection/mau_ghi_cau_tra_loi.csv": "cab1f837a43cca4ae7b595710e37b6f622962f64828957498c250b57399829e0"
+  },
+  "commands": [
+    ".\\.venv\\Scripts\\python.exe -m pytest -q --cov=src --cov-report=term --cov-report=json:reports/collection/coverage.json --junitxml=reports/collection/pytest.xml",
+    ".\\.venv\\Scripts\\python.exe -m ruff check .",
+    ".\\.venv\\Scripts\\python.exe -m pyright",
+    ".\\.venv\\Scripts\\python.exe -m compileall -q app.py src scripts tests"
+  ],
+  "limits": [
+    "UI verified with Streamlit AppTest, including real FileUploader test events; no browser pixel inspection.",
+    "Test answers and rater metadata are software fixtures stored under temporary test directories, not research observations.",
+    "Validation errors block the complete input sheet; imports are not a single SQLite transaction covering every row."
+  ]
+}

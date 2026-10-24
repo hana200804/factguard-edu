@@ -25,7 +25,7 @@ Ngân hàng có 50 câu do trợ lý soạn; mẫu đi kèm có 100 dòng trốn
 .\.venv\Scripts\python.exe scripts\import_collected.py data\collection\dot1.csv --dry-run
 ```
 
-Sau khi điền và hết lỗi, chạy lại lệnh nhập bỏ `--dry-run`; ca chưa có nhãn vào Phòng nghiên cứu → Gán nhãn độc lập. Tệp đã điền trong `data/collection/` có thể vào ZIP/Git, cần kiểm tra trước khi chia sẻ.
+Sau khi điền và hết lỗi, chạy lại lệnh nhập bỏ `--dry-run`; hoặc vào **Phòng nghiên cứu → Gán nhãn độc lập → Nhập nhiều câu trả lời từ tệp CSV** để tải mẫu, xem trước và bấm nhập (tối đa 5 MB). Ca mới chưa có nhãn. Tệp đã điền trong `data/collection/` có thể vào ZIP/Git, cần kiểm tra trước khi chia sẻ.
 
 **Kiểm chứng để hiểu đúng.** Ứng dụng tiếng Việt giúp học sinh THPT đối chiếu câu trả lời AI về Lịch sử Việt Nam với kho dữ kiện có nguồn. Chạy bằng Python/Streamlit trên CPU, không cần API key. Sau khi cài thư viện, kiểm chứng và thực nghiệm chạy offline; nút mở nguồn gốc cần Internet.
 
@@ -99,6 +99,8 @@ Xem [data/README.md](data/README.md) để bổ sung dữ kiện và [reports/gi
 ```
 
 Kết quả thực tế: `reports/experiment/latest.json`, `results.csv`, `ket_qua_thuc_nghiem.md`. Báo cáo tổng hợp: `reports/ket_qua_thuc_nghiem.md`; bằng chứng kiểm thử: `reports/kiem_thu.md`, `pytest.xml`, `coverage.json`.
+
+Kiểm thử bổ sung cho bộ thu thập và giao diện CSV: [reports/collection/kiem_thu.md](reports/collection/kiem_thu.md). Kết quả này tách khỏi các số liệu nghiên cứu v1/v2 đã lưu.
 
 Không điều chỉnh thuật toán/ngưỡng theo điểm evaluation. Tách theo sự kiện, đóng băng cách xử lý trong reports/protocol.json. Đáp án tham chiếu vẫn nằm trong kho: đây là kiểm chứng kho đóng, không phải khả năng khái quát sang sự kiện chưa biết. Xem điểm yếu baseline trong báo cáo; baseline không có cơ chế sinh nhãn contradicted.
 

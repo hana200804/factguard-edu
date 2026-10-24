@@ -6,6 +6,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+from src.collection_ui import collection_upload
 from src.evaluator import csv_bytes
 from src.loader import DataError
 from src.models import GOLD_LABELS, LABELS_VI
@@ -94,6 +95,7 @@ def independent_review(repository: ReviewRepository, facts, sources, development
                 st.success(f"Đã lưu {identifier}; chưa có nhãn hay dự đoán được tự điền.")
             except DataError as error:
                 st.error(str(error))
+    collection_upload(repository, facts, development, runtime)
     path = PROJECT_ROOT / "data" / "research" / "blind_review.csv"
     queue = pd.read_csv(path, keep_default_na=False).to_dict("records")
     collected = repository.collected_cases()
