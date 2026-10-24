@@ -1,5 +1,6 @@
 # FactGuard EDU
 
+V3 thử nghiệm trên nhánh `v3-nli`: [thiết kế, hồi quy và giới hạn NLI offline](reports/research_v3/README.md).
 ## Phiên bản nghiên cứu v2
 
 Ứng dụng hiện có **7 trang** và ba module có thể sử dụng/đo thực tế:

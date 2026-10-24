@@ -3,6 +3,7 @@
 These sets were all inspected while developing v2, so the numbers are regression checks only,
 never evidence of generalisation. The primary v3 evaluation is the collected real-answer study.
 """
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -14,15 +15,26 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from src.claim_verifier import ClaimVerifier
 from src.evaluator import calculate_metrics, csv_bytes
 from src.hybrid_verifier import HYBRID_VERSION, HybridVerifier
-from src.loader import load_evaluation, load_facts, load_sources, source_documents
+from src.loader import DataError, load_evaluation, load_facts, load_sources, source_documents
 from src.models import SUPPORTED
 from src.nli import MODEL_REVISION, shared_model
 from src.research_evaluator import load_challenge, validate_freeze
 from src.retriever import Retriever
 from src.utils import PROJECT_ROOT, atomic_json, utc_now
+from src.v3_freeze import freeze_v3_engine, validate_v3_freeze
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--freeze", action="store_true", help="Đóng băng riêng v3, không chạy hồi quy; từ chối ghi đè")
+    args = parser.parse_args()
+    if args.freeze:
+        try:
+            freeze_v3_engine()
+        except (DataError, OSError) as error:
+            raise SystemExit(f"Không đóng băng v3: {error}") from error
+        print("Đã ghi reports/research_v3/engine_freeze.json; chưa chạy đánh giá dữ liệu thật.")
+        return
     base = PROJECT_ROOT / "data"
     sources = load_sources(base / "sources.json")
     facts = load_facts(base / "facts.csv", sources)
@@ -58,7 +70,8 @@ def main():
     output.mkdir(parents=True, exist_ok=True)
     (output / "regression_results.csv").write_bytes(csv_bytes(frame))
     summary = {"created_at": utc_now(), "version": HYBRID_VERSION, "model_revision": MODEL_REVISION,
-               "v2_engine_matches_freeze": validate_freeze(), "metrics": metrics, "changed_predictions": len(changed),
+               "v2_engine_matches_freeze": validate_freeze(), "v3_engine_matches_freeze": validate_v3_freeze(),
+               "metrics": metrics, "changed_predictions": len(changed),
                "data_origin": "Bộ tổng hợp đã xem khi phát triển v2; chỉ là kiểm tra hồi quy."}
     atomic_json(output / "regression.json", summary)
     for name, by_method in metrics.items():
