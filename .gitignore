@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+pytest-cache-files-*/
+.ruff_cache/
+.coverage
+htmlcov/
+runtime/
+*.log
+*.zip
+node_modules/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml

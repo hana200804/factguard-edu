@@ -1,0 +1,79 @@
+[
+  {
+    "id": "S01",
+    "title": "Ký ức không phai về ngày 02/9/1945 ở Sài Gòn – Gia Định",
+    "publisher": "Bảo tàng Thành phố Hồ Chí Minh",
+    "url": "https://hcmc-museum.edu.vn/luu-tru/4844",
+    "published_at": "2024-09-01",
+    "checked_at": "2026-10-24",
+    "verified": true,
+    "file": "S01.md",
+    "verification_method": "Mở trang gốc và đối chiếu nội dung bằng công cụ web; chưa có thẩm định độc lập của giáo viên"
+  },
+  {
+    "id": "S02",
+    "title": "Tổng khởi nghĩa Cách mạng tháng Tám năm 1945",
+    "publisher": "Bảo tàng Lịch sử Quốc gia",
+    "url": "https://baotanglichsuquocgia.vn/vi/Articles/3097/18473/tong-khoi-nghia-cach-mang-thang-tam-nam-1945.html",
+    "published_at": "2015-08-18",
+    "checked_at": "2026-10-24",
+    "verified": true,
+    "file": "S02.md",
+    "verification_method": "Mở trang gốc và đối chiếu nội dung bằng công cụ web; chưa có thẩm định độc lập của giáo viên"
+  },
+  {
+    "id": "S03",
+    "title": "Một quyết định mang tính lịch sử của Đại tướng Võ Nguyên Giáp",
+    "publisher": "Bảo tàng Lịch sử Quốc gia",
+    "url": "https://baotanglichsuquocgia.vn/vi/Articles/3096/15973/mot-quyet-djinh-mang-tinh-lich-su-cua-djai-tuong-vo-nguyen-giap.html",
+    "published_at": "2014-03-20",
+    "checked_at": "2026-10-24",
+    "verified": true,
+    "file": "S03.md",
+    "verification_method": "Mở trang gốc và đối chiếu nội dung bằng công cụ web; chưa có thẩm định độc lập của giáo viên"
+  },
+  {
+    "id": "S04",
+    "title": "Kỷ niệm 84 năm thành lập Đảng Cộng sản Việt Nam – Con dấu của Đảng Cộng sản Đông Dương",
+    "publisher": "Bảo tàng Lịch sử Quốc gia",
+    "url": "https://baotanglichsu.vn/VI/Articles/3097/15722/ky-niem-84-nam-thanh-lap-djang-cong-san-viet-nam-3-2-1930-3-2-2014-con-dau-cua-djang-cong-san-djong-duong.html",
+    "published_at": "2014-01-31",
+    "checked_at": "2026-10-24",
+    "verified": true,
+    "file": "S04.md",
+    "verification_method": "Mở trang gốc và đối chiếu nội dung bằng công cụ web; chưa có thẩm định độc lập của giáo viên"
+  },
+  {
+    "id": "S05",
+    "title": "Sắc lệnh số 76: hoãn cuộc tổng tuyển cử đến ngày 6-1-1946",
+    "publisher": "Cổng Thông tin điện tử Chính phủ",
+    "url": "https://chinhphu.vn/default.aspx?docid=511&pageid=27160",
+    "published_at": "1945-12-18",
+    "checked_at": "2026-10-24",
+    "verified": true,
+    "file": "S05.md",
+    "verification_method": "Mở trang gốc và đối chiếu nội dung bằng công cụ web; chưa có thẩm định độc lập của giáo viên"
+  },
+  {
+    "id": "S06",
+    "title": "Kỷ niệm 100 năm Ngày Bác Hồ ra đi tìm đường cứu nước",
+    "publisher": "Báo Điện tử Chính phủ",
+    "url": "https://baochinhphu.vn/ky-niem-100-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc-5-6-1911-5-6-2011-nguoi-tao-nen-buoc-ngoat-lich-su-cho-cach-mang-viet-nam-10281639.htm",
+    "published_at": "2011-06-06",
+    "checked_at": "2026-10-24",
+    "verified": true,
+    "file": "S06.md",
+    "verification_method": "Mở trang gốc và đối chiếu nội dung bằng công cụ web; chưa có thẩm định độc lập của giáo viên"
+  },
+  {
+    "id": "S07",
+    "title": "Hội nghị lần thứ VIII Ban Chấp hành Trung ương Đảng",
+    "publisher": "Bảo tàng Lịch sử Quốc gia",
+    "url": "https://baotanglichsu.vn/vi/Articles/3097/14317/hoi-nghi-lan-thu-viii-ban-chap-hanh-trung-uong-djang-va-quyet-djinh-tien-hanh-cong-cuoc-giai-phong-dan-toc-tu-ngay-10-djen-ngay-19-5-1941.html",
+    "published_at": "2013-05-20",
+    "checked_at": "2026-10-24",
+    "verified": true,
+    "file": "S07.md",
+    "verification_method": "Mở trang gốc và đối chiếu nội dung bằng công cụ web; chưa có thẩm định độc lập của giáo viên"
+  }
+]

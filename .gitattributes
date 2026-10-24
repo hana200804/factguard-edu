@@ -1,0 +1,2 @@
+# Preserve exact file bytes so research SHA-256 checks also pass after cloning.
+* -text

@@ -1,0 +1,164 @@
+{
+  "created_at": "2026-10-24T08:58:01+00:00",
+  "algorithm_version": "1.0.0",
+  "split": "development",
+  "cases": 24,
+  "question_count": 8,
+  "duration_s": 0.09234670001023915,
+  "metrics": {
+    "baseline": {
+      "n": 24,
+      "accuracy": 0.5833333333333334,
+      "precision_macro": 0.38888888888888884,
+      "recall_macro": 0.5833333333333334,
+      "f1_macro": 0.4666666666666666,
+      "per_label": {
+        "supported": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1-score": 0.8,
+          "support": 8.0
+        },
+        "contradicted": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 8.0
+        },
+        "insufficient": {
+          "precision": 0.5,
+          "recall": 0.75,
+          "f1-score": 0.6,
+          "support": 8.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          6,
+          0
+        ],
+        [
+          2,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "supported",
+        "contradicted",
+        "insufficient",
+        "undetermined"
+      ],
+      "abstention_rate": 0.0,
+      "no_conclusive_rate": 0.5,
+      "selective_accuracy": 0.5833333333333334,
+      "mean_ms": 0.9082708341641895,
+      "median_ms": 0.8860499947331846,
+      "p95_ms": 1.1189399985596535
+    },
+    "proposed": {
+      "n": 24,
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "per_label": {
+        "supported": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 8.0
+        },
+        "contradicted": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 8.0
+        },
+        "insufficient": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 8.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "supported",
+        "contradicted",
+        "insufficient",
+        "undetermined"
+      ],
+      "abstention_rate": 0.0,
+      "no_conclusive_rate": 0.3333333333333333,
+      "selective_accuracy": 1.0,
+      "mean_ms": 1.4913500011365006,
+      "median_ms": 1.381949994538445,
+      "p95_ms": 2.0239649951690803
+    }
+  },
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "streamlit": "1.66.1",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "rapidfuzz": "3.14.6",
+      "pypdf": "6.21.2",
+      "plotly": "6.9.0"
+    }
+  },
+  "data_sha256": {
+    "facts.csv": "f0548dff36121bec48f64ae9f15de0420b3a8812343d6563ff17b32a46fb89e5",
+    "evaluation.csv": "0a8ade0c856aaf7f379765312e2b88c39cb8c97174d82d20553343fbebb1eec2",
+    "sources.json": "2e168f694dd210deb737fbfe6207a9cd1dfb042e5f4ed859b552e90ff649f08e",
+    "sources\\S01.md": "be0bb12d6f65b242d89d620f0482eb9b1b840c3d24ffd481edd3eff882aefbf0",
+    "sources\\S02.md": "26223f4cb1c44b22753980c2c9e3e2dd5f196c5ae8b6d2acf8d4e08f6f19b252",
+    "sources\\S03.md": "6ae5a7b07a63ee1101f3cd1e44248b4b3d8fefe841497a322bab71ece8cdbb80",
+    "sources\\S04.md": "e0b6a86adb75e517e4f52feda3a2f8ba8dcd34db77893685c97ce1133e7ddd82",
+    "sources\\S05.md": "857b8b2e4be0ada2b72008639fa6887dba8c7a1028f842d702d51413a7e7977d",
+    "sources\\S06.md": "d3a74d9a7739d915fc882aa58db28aa3c706004fb859701f2e521eeee65d3272",
+    "sources\\S07.md": "511b1ccd4ba691501c7ec02b7059690a99c36dd976a6e5b9d5becb86d4e61ffc"
+  }
+}

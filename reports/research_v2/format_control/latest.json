@@ -1,0 +1,432 @@
+{
+  "version": "2.0.0",
+  "created_at": "2026-10-24T10:03:14+00:00",
+  "cases": 46,
+  "event_clusters": 10,
+  "methods": [
+    "lexical_3way",
+    "rules_single_v1",
+    "claims_no_guard",
+    "claims_guarded"
+  ],
+  "metrics": {
+    "lexical_3way": {
+      "n": 46,
+      "accuracy": 0.45652173913043476,
+      "precision_macro": 0.3209013209013209,
+      "recall_macro": 0.42034313725490197,
+      "f1_macro": 0.3475862068965518,
+      "per_label": {
+        "supported": {
+          "precision": 0.5384615384615384,
+          "recall": 0.4375,
+          "f1-score": 0.4827586206896552,
+          "support": 16.0
+        },
+        "contradicted": {
+          "precision": 0.42424242424242425,
+          "recall": 0.8235294117647058,
+          "f1-score": 0.56,
+          "support": 17.0
+        },
+        "insufficient": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 13.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          7,
+          9,
+          0,
+          0
+        ],
+        [
+          3,
+          14,
+          0,
+          0
+        ],
+        [
+          3,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "supported",
+        "contradicted",
+        "insufficient",
+        "undetermined"
+      ],
+      "abstention_rate": 0.0,
+      "no_conclusive_rate": 0.0,
+      "selective_accuracy": 0.45652173913043476,
+      "mean_ms": 1.9113521737618493,
+      "median_ms": 1.8793999988702126,
+      "p95_ms": 2.2387250064639375,
+      "false_support_count": 6,
+      "non_supported_gold_count": 30,
+      "false_support_rate": 0.2,
+      "decisive_coverage": 1.0,
+      "decisive_risk": 0.5434782608695652,
+      "evidence_complete_accuracy": 0.2608695652173913,
+      "claim_detection_recall": 0.0,
+      "claim_label_recall": 0.0,
+      "claim_precision": null,
+      "gold_claim_count": 62,
+      "predicted_claim_count": 0
+    },
+    "rules_single_v1": {
+      "n": 46,
+      "accuracy": 0.2826086956521739,
+      "precision_macro": 0.7301587301587302,
+      "recall_macro": 0.26828808446455504,
+      "f1_macro": 0.3894927536231884,
+      "per_label": {
+        "supported": {
+          "precision": 0.8571428571428571,
+          "recall": 0.375,
+          "f1-score": 0.5217391304347826,
+          "support": 16.0
+        },
+        "contradicted": {
+          "precision": 1.0,
+          "recall": 0.35294117647058826,
+          "f1-score": 0.5217391304347826,
+          "support": 17.0
+        },
+        "insufficient": {
+          "precision": 0.3333333333333333,
+          "recall": 0.07692307692307693,
+          "f1-score": 0.125,
+          "support": 13.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          1,
+          9
+        ],
+        [
+          0,
+          6,
+          1,
+          10
+        ],
+        [
+          1,
+          0,
+          1,
+          11
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "supported",
+        "contradicted",
+        "insufficient",
+        "undetermined"
+      ],
+      "abstention_rate": 0.6521739130434783,
+      "no_conclusive_rate": 0.717391304347826,
+      "selective_accuracy": 0.8125,
+      "mean_ms": 1.34131521728072,
+      "median_ms": 1.3650499968207441,
+      "p95_ms": 1.6770500005804934,
+      "false_support_count": 1,
+      "non_supported_gold_count": 30,
+      "false_support_rate": 0.03333333333333333,
+      "decisive_coverage": 0.2826086956521739,
+      "decisive_risk": 0.07692307692307693,
+      "evidence_complete_accuracy": 0.2826086956521739,
+      "claim_detection_recall": 0.3709677419354839,
+      "claim_label_recall": 0.1935483870967742,
+      "claim_precision": 0.8846153846153846,
+      "gold_claim_count": 62,
+      "predicted_claim_count": 26
+    },
+    "claims_no_guard": {
+      "n": 46,
+      "accuracy": 0.8478260869565217,
+      "precision_macro": 0.8600217864923746,
+      "recall_macro": 0.8313536953242835,
+      "f1_macro": 0.8339275103980986,
+      "per_label": {
+        "supported": {
+          "precision": 0.75,
+          "recall": 0.9375,
+          "f1-score": 0.8333333333333334,
+          "support": 16.0
+        },
+        "contradicted": {
+          "precision": 0.9411764705882353,
+          "recall": 0.9411764705882353,
+          "f1-score": 0.9411764705882353,
+          "support": 17.0
+        },
+        "insufficient": {
+          "precision": 0.8888888888888888,
+          "recall": 0.6153846153846154,
+          "f1-score": 0.7272727272727273,
+          "support": 13.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          15,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "supported",
+        "contradicted",
+        "insufficient",
+        "undetermined"
+      ],
+      "abstention_rate": 0.0,
+      "no_conclusive_rate": 0.1956521739130435,
+      "selective_accuracy": 0.8478260869565217,
+      "mean_ms": 4.024795652303905,
+      "median_ms": 4.287749994546175,
+      "p95_ms": 5.65604999428615,
+      "false_support_count": 5,
+      "non_supported_gold_count": 30,
+      "false_support_rate": 0.16666666666666666,
+      "decisive_coverage": 0.8043478260869565,
+      "decisive_risk": 0.16216216216216217,
+      "evidence_complete_accuracy": 0.8478260869565217,
+      "claim_detection_recall": 0.967741935483871,
+      "claim_label_recall": 0.967741935483871,
+      "claim_precision": 0.9090909090909091,
+      "gold_claim_count": 62,
+      "predicted_claim_count": 66
+    },
+    "claims_guarded": {
+      "n": 46,
+      "accuracy": 0.9130434782608695,
+      "precision_macro": 0.9803921568627452,
+      "recall_macro": 0.9082767722473605,
+      "f1_macro": 0.9418616909129244,
+      "per_label": {
+        "supported": {
+          "precision": 1.0,
+          "recall": 0.9375,
+          "f1-score": 0.967741935483871,
+          "support": 16.0
+        },
+        "contradicted": {
+          "precision": 0.9411764705882353,
+          "recall": 0.9411764705882353,
+          "f1-score": 0.9411764705882353,
+          "support": 17.0
+        },
+        "insufficient": {
+          "precision": 1.0,
+          "recall": 0.8461538461538461,
+          "f1-score": 0.9166666666666666,
+          "support": 13.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          15,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          11,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "supported",
+        "contradicted",
+        "insufficient",
+        "undetermined"
+      ],
+      "abstention_rate": 0.06521739130434782,
+      "no_conclusive_rate": 0.30434782608695654,
+      "selective_accuracy": 0.9767441860465116,
+      "mean_ms": 5.760476086478498,
+      "median_ms": 6.605750000744592,
+      "p95_ms": 8.354175002750708,
+      "false_support_count": 0,
+      "non_supported_gold_count": 30,
+      "false_support_rate": 0.0,
+      "decisive_coverage": 0.6956521739130435,
+      "decisive_risk": 0.03125,
+      "evidence_complete_accuracy": 0.9130434782608695,
+      "claim_detection_recall": 0.967741935483871,
+      "claim_label_recall": 0.967741935483871,
+      "claim_precision": 0.967741935483871,
+      "gold_claim_count": 62,
+      "predicted_claim_count": 62
+    }
+  },
+  "paired_event_interval": {
+    "first": "claims_guarded",
+    "second": "lexical_3way",
+    "n_clusters": 10,
+    "estimate": 0.39714285714285713,
+    "lower": 0.225,
+    "upper": 0.5643035714285713,
+    "replicates": 2000,
+    "seed": 20261024,
+    "estimand": "Mean paired accuracy difference with equal weight per event cluster",
+    "caution": "Mô tả thăm dò trên số ít cụm tổng hợp; không suy rộng tới người học hay mọi câu trả lời AI."
+  },
+  "ablation_event_interval": {
+    "first": "claims_guarded",
+    "second": "claims_no_guard",
+    "n_clusters": 10,
+    "estimate": 0.024285714285714285,
+    "lower": 0.0,
+    "upper": 0.058571428571428566,
+    "replicates": 2000,
+    "seed": 20261024,
+    "estimand": "Mean paired accuracy difference with equal weight per event cluster",
+    "caution": "Mô tả thăm dò trên số ít cụm tổng hợp; không suy rộng tới người học hay mọi câu trả lời AI."
+  },
+  "training": {
+    "training_ids": [
+      "E076",
+      "E077",
+      "E078",
+      "E079",
+      "E080",
+      "E081",
+      "E082",
+      "E083",
+      "E084",
+      "E085",
+      "E086",
+      "E087",
+      "E088",
+      "E089",
+      "E090",
+      "E091",
+      "E092",
+      "E093",
+      "E094",
+      "E095",
+      "E096",
+      "E097",
+      "E098",
+      "E099"
+    ],
+    "classes": [
+      "contradicted",
+      "insufficient",
+      "supported"
+    ],
+    "coefficients": [
+      [
+        0.0,
+        -0.7993720969124471,
+        -0.5946249275815749,
+        -1.9180476689468204e-16,
+        0.5312369716996467,
+        0.2740754913239998
+      ],
+      [
+        0.0,
+        -0.21055020580843894,
+        -0.14208516614929245,
+        2.0732495545916478e-16,
+        -0.7182495882594376,
+        -0.9225987748609523
+      ],
+      [
+        0.0,
+        1.0099223027208855,
+        0.7367100937308666,
+        -1.5520188564482617e-17,
+        0.1870126165597913,
+        0.6485232835369517
+      ]
+    ],
+    "intercept": [
+      0.5924924515865575,
+      0.37078657043679575,
+      -0.9632790220233536
+    ],
+    "C": 1.0,
+    "class_weight": "balanced",
+    "random_state": 20261024
+  },
+  "engine_matches_freeze": true,
+  "data_origin": "assistant-authored synthetic challenge; not independent human evaluation",
+  "python": "3.12.10",
+  "code_sha256": {
+    "src/claim_spans.py": "41f8706bb0b9bd3756e47a8dc3173bd3aada1ebc0c0b6dab9508f4206e95f8aa",
+    "src/claim_verifier.py": "09b647c400632decba588efba3848819d5b0ff52e3983e7d95d492dd39f01e81",
+    "src/research_baseline.py": "016aa56cab95dbc0ab59f4d613e74793e9af6d77f6e790662c4088ea9d6e5f22",
+    "src/research_statistics.py": "4cab52cd5478e733a59087fd93e2e82ca1030d57d53507ae6f152ed705eda5c4",
+    "src/research_evaluator.py": "b7b6f30e11dca498b048c36cc2e8e22f5d959730049950641ebdf2a04fa38036",
+    "src/verifier.py": "724140670612f3a33d385e0bc842d8016f7b9b2741a70508f4f0cb99178fa3fc",
+    "src/retriever.py": "bcf09987f915ac59dbdc9ad5c1a1b2ce57604dc323dc7f462a908c5406bf6029",
+    "src/models.py": "6400864cdec02ae135b9570e4863959187f25fb9a63355585764d0163098f019",
+    "src/loader.py": "eaf367e2658530fefb8aefef136c0bca0277bff300f6a326c9643af1303f1382",
+    "src/utils.py": "57e55cab710a622f3e942f6e2bdfb60dad5996ad83ad541af094ffc175fa46e4",
+    "data/relations.json": "bc2384053787748de7e39bbf1d441fe3269b41fc516697e7bba9f58ec4f8189e",
+    "data/facts.csv": "f0548dff36121bec48f64ae9f15de0420b3a8812343d6563ff17b32a46fb89e5",
+    "data/sources.json": "2e168f694dd210deb737fbfe6207a9cd1dfb042e5f4ed859b552e90ff649f08e",
+    "data/evaluation.csv": "0a8ade0c856aaf7f379765312e2b88c39cb8c97174d82d20553343fbebb1eec2",
+    "reports/research_protocol_v2.json": "51a22ffbfeff970c4d8d28e39a57acaea292991951188e85f8b6fca6a5cc816f"
+  },
+  "analysis_type": "POST HOC; not preregistered; do not replace primary challenge score",
+  "question_changes": 34,
+  "original_challenge_sha256": "1a00a35fb43948d5c1414af46600dec334b811e989ccf63bc75b797b95a8bd07"
+}

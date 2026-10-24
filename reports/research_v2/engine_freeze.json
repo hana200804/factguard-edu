@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "frozen_at": "2026-10-24T09:53:55+00:00",
+  "files": {
+    "src/claim_spans.py": "41f8706bb0b9bd3756e47a8dc3173bd3aada1ebc0c0b6dab9508f4206e95f8aa",
+    "src/claim_verifier.py": "09b647c400632decba588efba3848819d5b0ff52e3983e7d95d492dd39f01e81",
+    "src/research_baseline.py": "016aa56cab95dbc0ab59f4d613e74793e9af6d77f6e790662c4088ea9d6e5f22",
+    "src/research_statistics.py": "4cab52cd5478e733a59087fd93e2e82ca1030d57d53507ae6f152ed705eda5c4",
+    "src/research_evaluator.py": "b7b6f30e11dca498b048c36cc2e8e22f5d959730049950641ebdf2a04fa38036",
+    "src/verifier.py": "724140670612f3a33d385e0bc842d8016f7b9b2741a70508f4f0cb99178fa3fc",
+    "src/retriever.py": "bcf09987f915ac59dbdc9ad5c1a1b2ce57604dc323dc7f462a908c5406bf6029",
+    "src/models.py": "6400864cdec02ae135b9570e4863959187f25fb9a63355585764d0163098f019",
+    "src/loader.py": "eaf367e2658530fefb8aefef136c0bca0277bff300f6a326c9643af1303f1382",
+    "src/utils.py": "57e55cab710a622f3e942f6e2bdfb60dad5996ad83ad541af094ffc175fa46e4",
+    "data/relations.json": "bc2384053787748de7e39bbf1d441fe3269b41fc516697e7bba9f58ec4f8189e",
+    "data/facts.csv": "f0548dff36121bec48f64ae9f15de0420b3a8812343d6563ff17b32a46fb89e5",
+    "data/sources.json": "2e168f694dd210deb737fbfe6207a9cd1dfb042e5f4ed859b552e90ff649f08e",
+    "data/evaluation.csv": "0a8ade0c856aaf7f379765312e2b88c39cb8c97174d82d20553343fbebb1eec2",
+    "reports/research_protocol_v2.json": "51a22ffbfeff970c4d8d28e39a57acaea292991951188e85f8b6fca6a5cc816f"
+  },
+  "note": "Frozen before generating the assistant-authored challenge set; not an independent preregistration."
+}

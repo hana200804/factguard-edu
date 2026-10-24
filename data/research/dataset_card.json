@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-24T09:55:10+00:00",
+  "cases": 46,
+  "event_clusters": 10,
+  "label_counts": {
+    "supported": 16,
+    "contradicted": 17,
+    "insufficient": 13
+  },
+  "origin": "assistant authored after engine freeze; NOT independent or human annotated",
+  "human_annotations": 0,
+  "sha256": "1a00a35fb43948d5c1414af46600dec334b811e989ccf63bc75b797b95a8bd07",
+  "policy": "No rule or label edits in response to challenge score. Human review data stored separately in runtime.",
+  "withheld_evidence_cases": 2
+}

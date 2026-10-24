@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "created_date": "2026-10-24",
+  "research_question": "Việc tách mệnh đề và ràng buộc quan hệ, phạm vi và nguồn có giảm kết luận hỗ trợ sai trên câu trả lời nhiều dữ kiện so với đối chứng từ vựng ba nhãn và phiên bản kiểm tra một dữ kiện?",
+  "primary_comparison": ["claims_guarded", "lexical_3way"],
+  "primary_metrics": ["accuracy", "false_support_rate", "evidence_complete_accuracy"],
+  "secondary_metrics": ["f1_macro", "decisive_coverage", "decisive_risk", "claim_recall", "retrieval_recall_at_4"],
+  "methods": ["lexical_3way", "rules_single_v1", "claims_no_guard", "claims_guarded"],
+  "lexical_classifier": {"model": "StandardScaler + LogisticRegression", "C": 1.0, "class_weight": "balanced", "max_iter": 1000, "random_state": 20261024, "fit_split": "development only", "features": ["question token ratio", "answer token ratio", "answer-reference cosine", "question TF-IDF cosine", "answer token length", "answer/reference token overlap"]},
+  "algorithm_rules": {"relation_lookup": "all anchor groups; maximal matching relation within the same event; ambiguity abstains", "values": "typed date/year and curated entity aliases", "guards": ["unknown clauses", "unknown residue", "question premise mismatch", "modality", "source conflicts"], "aggregation": "any contradicted => contradicted; unresolved => insufficient/undetermined; all checked and no unresolved => supported", "max_answer_chars": 12000},
+  "dataset_policy": "V1 evaluation has already been inspected and is regression data only. Build new challenge data after engine is frozen. New challenge remains synthetic, assistant-authored, not blinded or independently annotated. No human labels are fabricated.",
+  "human_review": "Export question/answer only for independent reviewers; do not display suggested labels or model predictions during annotation. Agreement reported only for actual overlapping ratings by distinct names.",
+  "resampling": {"unit": "event cluster", "bootstrap_replicates": 2000, "seed": 20261024, "interval": "paired percentile 95%", "interpretation": "exploratory variation over this small synthetic event set, not evidence about students or all historical answers"},
+  "stop_policy": "Do not change rules or labels in response to challenge score. Preserve score and log limitations. Independent regression-discovered software defects must be disclosed; any subsequent outcome is exploratory on the reused set."
+}

@@ -1,0 +1,14 @@
+{
+  "app.py": "ad504aaa23ecee2e46bf7d3bdb885e4a9c6c20e7c530156968a1482e6766ed50",
+  "src\\__init__.py": "4f2f52ed5257659e53465d00fefd95d3aef3833a19b7991944d0a5d0452e52fd",
+  "src\\baseline.py": "4e3161babd7a039fa478e738c8072f3b55297fa009bbbcb701dea0bb3348711c",
+  "src\\evaluator.py": "93a4e1482dda61f902fa28944ecf49544dbcd9a9a61e82baa0220ecff7998703",
+  "src\\loader.py": "eaf367e2658530fefb8aefef136c0bca0277bff300f6a326c9643af1303f1382",
+  "src\\models.py": "91d633e14595e669b9c0fb2574c0a08b002935efe91ce36533230420d2f6f206",
+  "src\\retriever.py": "bcf09987f915ac59dbdc9ad5c1a1b2ce57604dc323dc7f462a908c5406bf6029",
+  "src\\storage.py": "49b6e79d6e240f3f28c305dea228eff6fe193919f8e07e8cd301e224e4fe82d8",
+  "src\\ui.py": "520f2a1dd5783cc4227d7bf956339f48ce31901f65e93986d308261808100e03",
+  "src\\utils.py": "57e55cab710a622f3e942f6e2bdfb60dad5996ad83ad541af094ffc175fa46e4",
+  "src\\verifier.py": "724140670612f3a33d385e0bc842d8016f7b9b2741a70508f4f0cb99178fa3fc",
+  "reports\\protocol.json": "d032a5ca84fc88927d7411780ebc7db2124989c690e6d20384de1d38cfed9f00"
+}

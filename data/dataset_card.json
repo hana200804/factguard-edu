@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "created_at": "2026-10-24",
+  "facts": 33,
+  "sources": 7,
+  "cases": 111,
+  "evaluation_cases": 87,
+  "development_cases": 24,
+  "origin": "Dữ kiện đối chiếu nguồn công khai; câu trả lời và nhãn kiểm thử do trợ lý xây dựng có chủ đích.",
+  "human_review": "Chưa được giáo viên/người gán nhãn độc lập rà soát.",
+  "unverified_seed_facts": [],
+  "split_unit": "event_id",
+  "limits": "Nguồn nhỏ; kiểm thử tổng hợp; các biến thể cùng câu hỏi phụ thuộc nhau; không coi mỗi ca là một quan sát học sinh độc lập."
+}

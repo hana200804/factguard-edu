@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-10-24T10:09:11+00:00",
+  "identical_predictions_and_traces": true,
+  "identical_event_intervals": true,
+  "rows_per_run": 184,
+  "challenge_sha256": "1a00a35fb43948d5c1414af46600dec334b811e989ccf63bc75b797b95a8bd07",
+  "challenge_unchanged": true,
+  "engine_matches_freeze": true,
+  "timing_compared": false
+}

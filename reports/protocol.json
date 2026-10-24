@@ -1,0 +1,11 @@
+{
+  "algorithm_version": "1.0.0",
+  "protocol_date": "2026-10-24",
+  "baseline": {"question_token_set_ratio_min": 65, "answer_token_set_ratio_min": 65},
+  "proposed": {"max_direct_words": 32, "decision": "intent + all anchor groups + single verified fact + typed exact value + conservative residual guard", "retrieval_top_k": 4},
+  "split_unit": "event_id",
+  "development_events": ["departure1911", "return1941", "conference1941"],
+  "evaluation_events": ["independence1945", "hanoi1945", "hue1945", "saigon1945", "abdication1945", "party1930", "dbp1954", "decree1945", "saigonindependence1945", "outside"],
+  "policy": "Freeze before first evaluation run. Evaluation labels must not be used to tune rules or thresholds. Future changes require a new independent evaluation version. Correct software defects using unit tests; report inspection and synthetic origin transparently.",
+  "abstention": "undetermined is a wrong prediction against the three gold labels; also report insufficient + undetermined as no conclusive truth decision"
+}

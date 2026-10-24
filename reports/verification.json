@@ -1,0 +1,55 @@
+{
+  "verified_at": "2026-10-24T10:13:40+00:00",
+  "python": "3.12.10",
+  "pytest": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "104",
+    "time": "22.255",
+    "timestamp": "2026-10-24T17:11:26.484472+07:00",
+    "hostname": "DESKTOP-LNE3A9V"
+  },
+  "coverage_percent": 90.7605633802817,
+  "checks": {
+    "compile": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "lint": {
+      "exit_code": 0,
+      "output": "All checks passed!"
+    },
+    "types": {
+      "exit_code": 0,
+      "output": "0 errors, 0 warnings, 0 informations"
+    },
+    "dependencies": {
+      "exit_code": 0,
+      "output": "No broken requirements found."
+    }
+  },
+  "health": {
+    "status": 200,
+    "body": "ok"
+  },
+  "reproducibility": {
+    "created_at": "2026-10-24T10:09:11+00:00",
+    "identical_predictions_and_traces": true,
+    "identical_event_intervals": true,
+    "rows_per_run": 184,
+    "challenge_sha256": "1a00a35fb43948d5c1414af46600dec334b811e989ccf63bc75b797b95a8bd07",
+    "challenge_unchanged": true,
+    "engine_matches_freeze": true,
+    "timing_compared": false
+  },
+  "actual_local_review_records_at_handoff": {
+    "annotations": 0,
+    "collected_cases": 0,
+    "source_drafts": 0,
+    "audit_chain_ok": true
+  },
+  "engine_matches_freeze": true,
+  "visual_browser_review": "Not performed: prior localhost browser-origin permission was denied; no bypass attempted"
+}
