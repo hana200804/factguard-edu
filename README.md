@@ -16,6 +16,17 @@ Kết quả chính v2 nằm ở [reports/research_v2/bao_cao_nghien_cuu.md](repo
 
 Mã đã đóng băng trước khi tạo challenge. `scripts/build_research_challenge.py` và lệnh `--freeze` từ chối ghi đè. Không dùng kết quả challenge để sửa quy tắc/nhãn rồi gọi đó là kiểm thử chưa biết. Phân tích độ nhạy dạng câu hỏi được công bố riêng là hậu nghiệm.
 
+## Thu thập câu trả lời AI thật
+
+Ngân hàng có 50 câu do trợ lý soạn; mẫu đi kèm có 100 dòng trống cho ChatGPT/Gemini, chưa phải dữ liệu đã thu. Xem [hướng dẫn thu thập](reports/huong_dan_thu_thap.md) về cách hỏi, ghi nguyên văn, dùng Excel và bảo vệ dữ liệu. Chạy tại thư mục dự án:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_collection_kit.py --tools ChatGPT Gemini --output data\collection\dot1.csv
+.\.venv\Scripts\python.exe scripts\import_collected.py data\collection\dot1.csv --dry-run
+```
+
+Sau khi điền và hết lỗi, chạy lại lệnh nhập bỏ `--dry-run`; ca chưa có nhãn vào Phòng nghiên cứu → Gán nhãn độc lập. Tệp đã điền trong `data/collection/` có thể vào ZIP/Git, cần kiểm tra trước khi chia sẻ.
+
 **Kiểm chứng để hiểu đúng.** Ứng dụng tiếng Việt giúp học sinh THPT đối chiếu câu trả lời AI về Lịch sử Việt Nam với kho dữ kiện có nguồn. Chạy bằng Python/Streamlit trên CPU, không cần API key. Sau khi cài thư viện, kiểm chứng và thực nghiệm chạy offline; nút mở nguồn gốc cần Internet.
 
 ## Chạy ngay trên máy này
@@ -102,6 +113,7 @@ factguard-edu/
   assets/style.css
   src/                   # core v1, claim_verifier, research_evaluator, review, annotation_study, UI
   data/                  # 33 facts, v1 cases, 23 quan hệ, challenge v2, phiếu gán nhãn, 7 nguồn
+    collection/          # ngân hàng câu hỏi và mẫu trống thu câu trả lời AI thật
   tests/                 # core, PDF, dữ liệu, metrics, SQLite, AppTest
   scripts/               # tạo dữ liệu, tái lập, đóng gói
   reports/               # nghiên cứu, phản biện, demo, log và số liệu thật
