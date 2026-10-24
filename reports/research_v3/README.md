@@ -4,7 +4,7 @@
 
 V3 (`3.0.0-dev`, nhánh `v3-nli`) thử dùng NLI cho những đoạn mà luật v2 chưa đọc được. Câu hỏi nghiên cứu là: **có tăng số ca kết luận đúng mà không tăng số ca hỗ trợ sai không?** Luật v2 và dữ liệu đã đóng băng được giữ nguyên. Đây là module thử nghiệm, chưa thay phương pháp v2 trong giao diện chính.
 
-Hiện có kết quả hồi quy trên dữ liệu tổng hợp đã xem. **Chưa có kết quả đánh giá v3 trên câu trả lời AI thật được hai người gán nhãn đồng thuận.** Lệnh đóng băng đã được chuẩn bị nhưng chưa chạy; `reports/research_v3/engine_freeze.json` chưa được tạo. Không mô tả v3 là đã đóng băng hay đã được kiểm chứng độc lập.
+Hiện có kết quả hồi quy trên dữ liệu tổng hợp đã xem. **Chưa có kết quả đánh giá v3 trên câu trả lời AI thật được hai người gán nhãn đồng thuận.** V3 đã được đóng băng lúc `2026-10-24T15:40:16+00:00` (UTC), **trước khi có bất kỳ câu trả lời AI thật nào**; manifest ở [engine_freeze.json](engine_freeze.json). Đóng băng không có nghĩa là đã được kiểm chứng độc lập.
 
 Thiết kế, ngưỡng và lịch sử sửa luật nằm trong [protocol.json](protocol.json). Những giới hạn của kho dữ kiện và thiết kế v2 vẫn áp dụng; xem [giới hạn nghiên cứu](../gioi_han_nghien_cuu.md).
 
@@ -81,7 +81,7 @@ Ba thay đổi đều được ghi ngày 24/10/2026. Không gọi toàn bộ log
 
 Quy trình dự kiến: xem diff và duyệt logic → đóng băng → thu câu trả lời mới → gán nhãn độc lập trước khi xem dự đoán → đánh giá. Bất kỳ ca thật nào đã xem khi sửa luật đều không còn là dữ liệu đánh giá chưa biết. Nếu sửa sau đóng băng, cần phiên bản/protocol và bộ đánh giá mới, không chỉnh rồi dùng lại nhãn “chưa xem”.
 
-**Chưa chạy lệnh đóng băng dưới đây.** Chỉ chạy một lần khi đã duyệt v3:
+**Lệnh dưới đây đã chạy ngày 24/10/2026 và manifest đã tồn tại**; chạy lại sẽ bị từ chối. Mọi sửa đổi v3 từ nay cần phiên bản và protocol mới:
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\evaluate_v3.py --freeze
