@@ -6,6 +6,14 @@
 
 Chạy cục bộ: `run-web.bat` hoặc `.\.venv\Scripts\python.exe scripts\serve_web.py --port 8765` sau khi cài `requirements-web.txt`. Bản Streamlit bên dưới vẫn được giữ làm giao diện nghiên cứu bổ sung.
 
+### Không gian lớp học
+
+- **Luyện kiểm chứng:** 15 bài có nguồn, tự chọn kết luận và căn cứ trước khi xem giải thích; lưu tiến độ, tải phiếu ẩn danh và in/PDF. Chạy trong trình duyệt, không cần dịch vụ AI.
+- **Không gian giáo viên:** chọn bộ bài, xuất JSON/phiếu in; nhập phiếu hoàn tất để tính lại điểm, xem ma trận nhầm lẫn, biểu đồ nhãn/căn cứ và xuất CSV/PDF.
+- Ngân hàng do trợ lý soạn, chưa có giáo viên thẩm định. Chưa có dữ liệu chứng minh cải thiện học tập. Xem [quy trình giao bài, cách chấm và quyền riêng tư](reports/huong_dan_lop_hoc.md).
+
+Kiểm tra module lớp học: `node --test tests/classroom.test.cjs` (không cần cài gói Node).
+
 V3 thử nghiệm trên nhánh `v3-nli`: [thiết kế, hồi quy và giới hạn NLI offline](reports/research_v3/README.md).
 ## Phiên bản nghiên cứu v2
 

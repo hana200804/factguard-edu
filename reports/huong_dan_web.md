@@ -12,6 +12,7 @@ Giao diện đã được xuất bản trên Sites. API hiện chạy trên máy
 
 - **Kiểm chứng:** nhập câu hỏi/câu trả lời, chọn luật v2, v3 hoặc so sánh; đọc mệnh đề tô màu, giá trị mâu thuẫn, phần chưa xác minh, quyết định NLI và bằng chứng gốc. Ví dụ minh họa được ghi rõ; không phải câu trả lời đã thu từ chatbot.
 - **Kho bằng chứng:** tìm kiếm và lọc dữ kiện, xem đáp án/tham chiếu/vị trí, mở URL nguồn.
+- **Luyện kiểm chứng và Không gian giáo viên:** 15 bài có nguồn, chọn kết luận/căn cứ, tự viết lý do; giáo viên xuất bộ bài, nhận phiếu ẩn danh và xem tổng hợp. Xem [hướng dẫn lớp học](huong_dan_lop_hoc.md). Những luồng này không gọi API AI và không tự ghi vào nghiên cứu.
 - **Lịch sử:** tối đa 30 lượt trong trình duyệt; xem lại, tải JSON hoặc tự xóa. Không được tính thành dữ liệu nghiên cứu.
 - **Phòng nghiên cứu:** mã truy cập riêng; tải mẫu CSV, xem trước ẩn xuất xứ, xác nhận nhập, gán nhãn thủ công, đánh giá năm phương pháp và tải Markdown/CSV/JSON. Cần ít nhất hai tên đồng thuận; tên vẫn là tự khai, chưa xác thực danh tính.
 - **Ghi vết:** mỗi lần đánh giá lưu thư mục riêng; giữ đầu vào/nhãn dưới dạng mã băm, số ca chờ và số câu hỏi phân biệt. Giao diện báo khi kết quả đã cũ vì nhãn thay đổi. Mã băm tệp xuất phát hiện thay đổi ngoài lần lưu, không thay chữ ký số hoặc xác thực người dùng.

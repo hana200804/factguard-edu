@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-10-25T07:48:40.511498+00:00",
+  "public_url": "https://factguard-edu-hana-2026.choicelamp8.chatgpt.site",
+  "site_version": 4,
+  "site_source_commit": "805fa528b57f7b4953857fa48824278c2c724687",
+  "deployment_id": "appgdep_6addb416c9e88191803db0da230aac1a",
+  "deployment_status": "succeeded",
+  "python_tests": {
+    "passed": 220,
+    "failures": 0,
+    "elapsed_seconds": 26.48
+  },
+  "javascript_tests": {
+    "passed": 14,
+    "failures": 0
+  },
+  "javascript_syntax": "passed",
+  "browser_checks": [
+    "Local 6-exercise session: complete through actual forms; correct and deliberately incorrect choices scored separately.",
+    "Progress restored after page reload at exercise 3; completed anonymous JSON downloaded and read back from disk.",
+    "Public practice route renders all three learning steps and 15-exercise bank.",
+    "Public teacher route renders assignment form, all 15 selectable exercises and honest empty aggregate.",
+    "Public verification through restarted real API returns contradicted for both v2/v3 and three claim checks."
+  ],
+  "frozen_engine_files": 22,
+  "frozen_engine_files_unchanged": true,
+  "freeze_manifest_unchanged": true,
+  "v2_freeze_valid": true,
+  "v3_freeze_valid": true,
+  "original_research_database_unchanged": true,
+  "admin_secret_in_public_bundle": false,
+  "classroom_data_flow": "Browser-local practice progress; exported anonymous self-reported JSON; teacher aggregates in memory; no automatic research ingestion or AI API calls from classroom modules.",
+  "limitations": [
+    "Teacher file picker and native print dialog not exercised through browser automation. Parsing, scoring, aggregation and CSV safety tested in Node.",
+    "Downloaded browser test contains software-fixture explanations and is not a learner observation.",
+    "No independent teacher review or actual classroom pilot; no claim of learning improvement.",
+    "Public AI API uses a temporary Windows-backed tunnel and requires this machine and services to remain running."
+  ],
+  "screenshot": "luyen-kiem-chung.jpg"
+}
